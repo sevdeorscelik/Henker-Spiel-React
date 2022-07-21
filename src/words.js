@@ -1,27 +1,27 @@
-var TURKISH_WORDS = [
-  'kalem',
-  'tahta',
-  'bacak',
-  'radyo',
-  'sehpa',
-  'tabak',
-  'kilit',
-  'rende',
-  'makas',
-  'dolap',
-  'tepsi',
-  'lamba',
-  'rende',
-  'kazak',
-  'kumru',
-  'geyik',
-  'banyo',
-  'biber',
-  'gurur',
+var DEUTSCH_WORDS = [
+  'stift',
+  'tafel',
+  'bein',
+  'radio',
+  'kaffetisch',
+  'teller',
+  'fenster',
+  'tisch',
+  'schere',
+  'schrank',
+  'regenbogen',
+  'lampe',
+  'schokolade',
+  'pullover',
+  'vogel',
+  'katze',
+  'meer',
+  'pfeffer',
+  'stolz',
 ]
 
 function randomWord() {
-  return TURKISH_WORDS[Math.floor(Math.random() * TURKISH_WORDS.length)]
+  return DEUTSCH_WORDS[Math.floor(Math.random() * DEUTSCH_WORDS.length)]
 }
 
 export { randomWord }

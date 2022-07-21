@@ -12,12 +12,12 @@
   font-size: 3.5rem;
   font-weight: 3rem;
   margin-bottom: 0.1em;
-  margin-top: 0;
-  color: #377D71;
+  margin-top: 3rem;
+  color: #ECDBBA;
 }
 
 .Hangman-wrong {
-  color: red;
+  color: brown;
   font-weight: bold;
   font-size: 2rem;
 }
@@ -25,13 +25,18 @@
 .Hangman-word {
   letter-spacing: .3em;
   font-size: 3rem;
+
+  color: #ECDBBA;
 }
 
-.Hangman-btns {
+.Hangman-btns  {
   display: inline-block;
   width: 250px;
-
+  color: #C689C6;
 }
+
+
+
 
 .Hangman button {
   border: none;
@@ -86,16 +91,25 @@
 }
 
 @media screen and (max-width:768px) {
+
+  .Hangman h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  
   .flex {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: auto;
+    gap: 0;
+    padding: 0;
   }
 
   .Hangman-wrong {
-    margin-top: 0;
+    margin-top: 2rem;
     color: red;
     font-weight: bold;
     font-size: 2rem;

@@ -5,6 +5,16 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-image: url('./bg-1.png');
+  background-color: #04293A;
+}
+
+@media screen and (max-width:768px) {
+
+body{
+  background-image: none;
+}
 }
 
 code {

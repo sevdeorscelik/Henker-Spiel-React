@@ -55,11 +55,11 @@ class Hangman extends Component {
 
   render() {
     let gameOver = this.state.nWrong >= this.props.maxWrong
-    const altText = `${this.state.nWrong}/${this.props.maxWrong} tahmin sayacı`
+    const altText = `${this.state.nWrong}/${this.props.maxWrong} zähler`
     const isWinner = this.guessedWord().join('') === this.state.answer
     let gameState = this.generateButtons()
-    if (isWinner) gameState = 'Tebrikler! Diğer kelimeye geçmeye ne dersin'
-    if (gameOver) gameState = 'Maalesef Adam İdam Edildi:('
+    if (isWinner) gameState = 'Herzliche Glückwünsche! '
+    if (gameOver) gameState = 'Leider wurde der Mensch hingerichtet:('
     return (
       <div className='Hangman'>
         <h2>Henker Spiel</h2>
@@ -71,13 +71,13 @@ class Hangman extends Component {
           </div>
 
           <div>
-            <p className='Hangman-wrong'>Hatalı Tahmin: {this.state.nWrong} </p>
+            <p className='Hangman-wrong'>Falscher Vermutungen: {this.state.nWrong} </p>
             <p className='Hangman-word'>
               {!gameOver ? this.guessedWord() : this.state.answer}{' '}
             </p>
             <p className='Hangman-btns'>{gameState}</p>
             <button id='restart' onClick={this.restart}>
-              Yeni Kelime Al!
+            ein neues Wort!
             </button>
           </div>
 
