@@ -3,7 +3,7 @@ var DEUTSCH_WORDS = [
   'tafel',
   'bein',
   'radio',
-  'kaffetisch',
+  'kaffeetisch',
   'teller',
   'fenster',
   'tisch',
