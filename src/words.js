@@ -18,6 +18,7 @@ var DEUTSCH_WORDS = [
   'meer',
   'pfeffer',
   'stolz',
+  'pascha'
 ]
 
 function randomWord() {
